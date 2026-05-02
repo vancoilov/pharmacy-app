@@ -1,8 +1,9 @@
 'use client';
 
-import { Heart, ShoppingCart } from 'lucide-react';
+import { Heart, ShoppingCart, Check } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useCart } from '@/lib/cart-context';
 
 interface ProductCardProps {
   id: number;
@@ -22,7 +23,15 @@ export function ProductCard({
   badge,
 }: ProductCardProps) {
   const [liked, setLiked] = useState(false);
+  const [addedToCart, setAddedToCart] = useState(false);
+  const { addToCart } = useCart();
   const discountedPrice = discount ? Math.round(price * (1 - discount / 100)) : price;
+
+  const handleAddToCart = () => {
+    addToCart(id);
+    setAddedToCart(true);
+    setTimeout(() => setAddedToCart(false), 2000);
+  };
 
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition border border-border group">
@@ -85,9 +94,25 @@ export function ProductCard({
         </div>
 
         {/* Add to cart button */}
-        <button className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground py-2 lg:py-2.5 rounded-lg font-medium text-sm hover:bg-primary/90 transition">
-          <ShoppingCart className="w-4 h-4" />
-          <span>Додади</span>
+        <button 
+          onClick={handleAddToCart}
+          className={`w-full flex items-center justify-center gap-2 py-2 lg:py-2.5 rounded-lg font-medium text-sm transition ${
+            addedToCart 
+              ? 'bg-green-600 text-white' 
+              : 'bg-primary text-primary-foreground hover:bg-primary/90'
+          }`}
+        >
+          {addedToCart ? (
+            <>
+              <Check className="w-4 h-4" />
+              <span>Додадено</span>
+            </>
+          ) : (
+            <>
+              <ShoppingCart className="w-4 h-4" />
+              <span>Додади</span>
+            </>
+          )}
         </button>
       </div>
     </div>

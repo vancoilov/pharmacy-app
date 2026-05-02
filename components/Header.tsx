@@ -3,6 +3,7 @@
 import { Search, ShoppingCart, Heart, Menu, User, X } from 'lucide-react';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useCart } from '@/lib/cart-context';
 
 const CATEGORIES = [
   { name: 'Здравје', count: 374 },
@@ -16,6 +17,10 @@ const CATEGORIES = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const { getItemCount, getCartTotal } = useCart();
+  
+  const itemCount = getItemCount();
+  const cartTotal = getCartTotal();
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-border shadow-sm">
@@ -93,10 +98,12 @@ export function Header() {
               className="flex items-center gap-2 p-2 hover:bg-muted rounded-lg transition relative"
             >
               <ShoppingCart className="w-5 h-5 text-foreground" />
-              <span className="absolute -top-0.5 -right-0.5 sm:static bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-medium">
-                0
-              </span>
-              <span className="hidden lg:block text-sm font-medium">0 ден</span>
+              {itemCount > 0 && (
+                <span className="absolute -top-0.5 -right-0.5 sm:static bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-medium">
+                  {itemCount}
+                </span>
+              )}
+              <span className="hidden lg:block text-sm font-medium">{cartTotal} ден</span>
             </Link>
           </div>
         </div>
