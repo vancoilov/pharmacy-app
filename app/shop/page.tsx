@@ -91,11 +91,11 @@ export default function ShopPage() {
     (filters.onlyDiscount ? 1 : 0);
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background lg:h-screen lg:overflow-hidden lg:flex lg:flex-col">
       <Header />
 
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-border">
+      <div className="bg-white border-b border-border shrink-0">
         <div className="container mx-auto px-4 py-3">
           <nav className="text-sm text-muted-foreground">
             <a href="/" className="hover:text-primary">Дома</a>
@@ -106,17 +106,15 @@ export default function ShopPage() {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 py-6">
-        <div className="flex flex-col lg:flex-row gap-6">
+      <main className="flex-1 container mx-auto px-4 py-6 lg:min-h-0">
+        <div className="flex flex-col lg:flex-row gap-6 lg:h-full">
           {/* Desktop Filters Sidebar */}
-          <aside className="hidden lg:block w-64 shrink-0">
-            <div className="sticky top-24">
-              <Filters filters={filters} onFiltersChange={setFilters} />
-            </div>
+          <aside className="hidden lg:block w-64 shrink-0 lg:h-full lg:overflow-y-auto lg:pr-2">
+            <Filters filters={filters} onFiltersChange={setFilters} />
           </aside>
 
           {/* Products Section */}
-          <div className="flex-1">
+          <div className="flex-1 lg:overflow-y-auto lg:pr-2">
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
               <div>
@@ -290,7 +288,10 @@ export default function ShopPage() {
         </div>
       </main>
 
-      <Footer />
+      {/* Footer only on mobile */}
+      <div className="lg:hidden">
+        <Footer />
+      </div>
       <BottomNav />
 
       {/* Mobile Filters Modal */}
