@@ -132,6 +132,14 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/shop"
+                className="block px-4 py-3 text-sm font-medium text-foreground hover:text-primary hover:bg-white transition rounded-t-lg"
+              >
+                Сите производи
+              </Link>
+            </li>
             <li className="ml-auto">
               <Link
                 href="/promotions"
