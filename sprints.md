@@ -1,324 +1,269 @@
-✅ SPRINT 1 — ОСНОВА (LAYOUT + NAVIGATION + UI SYSTEM)
+# Аптека - Развој во спринтови
 
-Create a **mobile-first responsive e-commerce pharmacy UI foundation**.
+Реална фармацевтска е-commerce платформа слична на elenafarm.mk
 
-### 🌍 LANGUAGE
+---
 
-* ✅ Entire UI in Macedonian (Cyrillic)
+## ✅ SPRINT 1 — ОСНОВА (UI SYSTEM + КОМПОНЕНТИ)
 
-### 📱 MOBILE-FIRST
+Fundament за целиот проект - design system, глобални компоненти, и реуزабилни UI елементи.
 
-* ✅ iPhone-first layout
-* ✅ Sticky header with search
-* ✅ Sticky bottom navigation:
-  * ✅ Дома
-  * ✅ Категории
-  * ✅ Кошничка
-  * ✅ Профил
-* ✅ Thumb-friendly buttons
-* Accordion/collapsible sections
+### 🎨 ДИЗАЈН СИСТЕМ
+* ✅ Боје: бело, зелено (primary), сино (accent), неутрални тонови
+* ✅ Типографија: Sans-serif за целиот сајт
+* ✅ Spacing, borders, shadows
 
-### 🎨 DESIGN
+### 🧱 ГЛОБАЛНИ КОМПОНЕНТИ
+* ✅ Header (пребарување, кошничка, wishlist)
+* ✅ Bottom Navigation (мобилен)
+* ✅ ProductCard (слика, цена, попуст, wishlist)
+* ✅ Category shortcuts
+* ✅ Buttons, Badges, Tags
+* ✅ Footer
 
-* ✅ White background, green/blue accents
-* ✅ Rounded cards, soft shadows
-* ✅ Clean medical/pharmacy style
+### 📐 РЕСПОНЗИВНОСТ
+* ✅ Mobile-first approach (2 col grid)
+* ✅ Tablet (3 col grid)
+* ✅ Desktop (4 col grid)
 
-### 🧱 COMPONENTS (GLOBAL) — ✅ COMPLETE
+### 🎯 СТАТУС: ✅ ЗАВРШЕН
 
-* ✅ Header (with search)
-* ✅ Bottom navigation
-* ✅ Product card:
-  * ✅ image
-  * ✅ name
-  * ✅ price
-  * ✅ discount badge
-  * ✅ heart icon (wishlist)
-* ✅ Buttons (primary/secondary)
-* ✅ Tags (На попуст, Ново)
+---
 
-### 📦 DUMMY DATA — ✅ COMPLETE
+## ✅ SPRINT 2 — HOMEPAGE
 
-* ✅ "Витамин Ц 1000mg"
-* ✅ "Магнезиум + Б6"
-* ✅ "Крем за лице SPF 50"
-* ✅ Prices in MKD
-* ✅ Fake discounts
+Комплетна homepage страна со сите главни секции.
 
-### 📱 UX
-
-* ✅ Large tap targets
-* ✅ Smooth scrolling
-* ✅ Microinteractions
-
-### 🎯 STATUS: COMPLETE ✅
-
-Design system, base layout, and reusable components ready.
-
-✅ SPRINT 2 — HOMEPAGE
-
-Create HOMEPAGE using existing components.
-
-Include:
-
-* ✅ Top bar (телефон, достава инфо)
-* ✅ Search bar
-* ✅ Category shortcuts (grid layout)
-* ✅ Hero banner / promotions slider
-
-Sections:
-
-* ✅ "На попуст"
-* ✅ "Ново"
-* ✅ Product grid (responsive: 2 col mobile, 3 col tablet, 4 col desktop)
+### 📦 СОДРЖИНА
+* ✅ Top bar (контакт инфо)
+* ✅ Promo banner (достава)
+* ✅ Hero slider (промоции)
+* ✅ Categories grid (2x5 категории)
+* ✅ Featured products (На попуст, Ново)
 * ✅ Features section (достава, плаќање, поддршка)
 * ✅ Newsletter signup
 * ✅ Footer
 
-### 🎯 STATUS: COMPLETE ✅
+### 🎨 ДИЗАЈН
+* Слично на elenafarm.mk
+*響сивна на desktop и мобилен
 
-Fully functional responsive homepage UI ready.
+### 🎯 СТАТУС: ✅ ЗАВРШЕН
 
+---
 
-🟠 SPRINT 3 — SHOP / CATEGORY PAGE
-Create SHOP / CATEGORY PAGE.
+## 🟡 SPRINT 3 — SHOP PAGE + FILTERS
 
-Include:
+Страна за приказ на сите производи со филтрирање и сортирање.
 
-* Filters (collapsible):
-
-  * цена
-  * бренд
-  * категорија
-
-* Sort:
-
-  * цена
-  * популарност
-
-* Product grid (2 per row mobile)
-
-* Infinite scroll or pagination
-
-### 🎯 GOAL
-
-User can browse and filter products.
-
-
-🔵 SPRINT 4 — PRODUCT PAGE
-
-Create PRODUCT PAGE.
-
-Include:
-
-* Swipeable image gallery
-* Product name
-* Price + discount badge
-* Short description
-* Quantity selector
-
-Buttons:
-
-* "Додади во кошничка"
-* "Додади во омилени ❤️"
-
-Tabs:
-
-* Опис
-
-* Карактеристики
-
-* Related products
-
-### 🎯 GOAL
-
-Detailed product view with actions.
-
-🟣 SPRINT 5 — CART + CORE FUNCTIONALITY
-
-Create CART (КОШНИЧКА) and core UI behavior.
-
-CART:
-
-* List of products
-* Quantity control
-* Remove item
-* Total price
-* Button: "Продолжи кон нарачка"
-
-### ⭐ CORE FUNCTIONALITY
-
-* Add to cart updates cart count
-* Wishlist toggle (heart icon)
-* Responsive navigation menu
-* Sticky header with search
-* Bottom navigation working
-
-### 🎯 GOAL
-
-Shopping flow works visually.
-
-🔴 SPRINT 6 — CHECKOUT
-
-Create CHECKOUT page.
-
-Form:
-
-* Име и презиме
-* Телефон
-* Адреса
-* Град
-
-Payment:
-
-* Плаќање при достава
-* Картичка
-
-Include:
-
-* Delivery info
-* Order summary
-
-### 🎯 GOAL
-
-Complete order flow UI.
-
-⚫ SPRINT 7 — USER (OPTIONAL)
-Create USER UI.
-
-Include:
-
-* Login screen
-* Register screen
-* Wishlist page (омилени производи)
-
-### 🎯 GOAL
-
-Basic user account interface.
-
-🧑‍💼 SPRINT 8 — ADMIN PANEL (ОСНОВА)
-
-Create Admin Dashboard UI.
-
-### 🌍 LANGUAGE
-
-* Macedonian (Cyrillic)
-
-### SIDEBAR:
-
-* Контролна табла
-* Производи
-* Категории
-* Нарачки
-* Промоции
-* Корисници
-* Подесувања
-
-### DASHBOARD:
-
-* Cards:
-
-  * Вкупни нарачки
-  * Вкупна продажба
-  * Број на производи
-* Recent orders table
-
-### UI:
-
-* SaaS style
-* Tables, cards, modals
-
-### 🎯 GOAL
-
-Admin structure ready.
-
-🧑‍💼 SPRINT 9 — PRODUCTS MANAGEMENT
-
-Create PRODUCTS MANAGEMENT.
-
-Table:
-
-* слика
-* име
-* цена
-* залиха
-
-Actions:
-
-* Додај производ
-* Измени
-* Избриши
-
-### ADD / EDIT FORM:
-
-* Име
-* Опис
-* Цена
-* Попуст (% или фиксна)
+### 🔍 ФИЛТРИ (Collapsible)
 * Категорија
-* Upload слики
-* Залиха
+* Цена (range slider)
+* Бренд
+* На попуст (yes/no)
+
+### 📊 СОРТИРАЊЕ
+* По популарност (default)
+* По цена (ниска → висока)
+* По цена (висока → ниска)
+* Ново (most recent)
+
+### 📱 LAYOUT
+* Мобилен: 2 колони, филтри во drawer/modal
+* Tablet: 3 колони, филтри на страна
+* Desktop: 4 колони, филтри на страна
+
+### 🎯 GOAL: Брање и филтрирање на производи
+
+---
+
+## 🔵 SPRINT 4 — PRODUCT DETAIL PAGE
+
+Детална страна за еден производ.
+
+### 📷 ГАЛЕРИЈА
+* Swipeable image gallery (или слајдер)
+* Thumbnail навигација
+* Zoom на image
+
+### 📝 ИНФОРМАЦИИ
+* Име + бренд
+* Цена + попуст
+* Rating (звезди) + број на reviews
+* Кратко описание
+* Quantity selector (+-  buttons)
+
+### 🎬 АКЦИИ
+* "Додади во кошничка" (primary button)
+* "Додади во омилени" (heart icon)
+* Share (социјални мрежи)
+
+### 📑 ТАБОВИ
+* Полн опис
+* Карактеристики (таблица)
+* Упатство за користење
+* Related/Similar products
+
+### 💬 REVIEWS
+* List of reviews
+* Rating distribution
+
+### 🎯 GOAL: Детален преглед на производ
+
+---
+
+## 🟣 SPRINT 5 — CART PAGE + CHECKOUT
+
+Кошничка и нарачка форма.
+
+### 🛒 КОШНИЧКА PAGE
+* List of cart items
+* Quantity control (+/- buttons)
+* Remove item (X button)
+* Subtotal + tax + shipping
+* Total price
+* "Продолжи кон нарачка" button
+* "Продолжи куповање" link
+
+### 📋 CHECKOUT PAGE
+* Delivery info form:
+  * Име и презиме (required)
+  * Email (required)
+  * Телефон (required)
+  * Адреса (required)
+  * Град (dropdown)
+  * Постален број
+
+* Shipping method:
+  * Стандардна достава (5-7 денови)
+  * Експресна достава (1-2 денови)
+
+* Payment method:
+  * Плаќање при достава (cash on delivery)
+  * Online плаќање (Stripe/PayPal)
+
+* Order review:
+  * Cart summary
+  * Prices breakdown
+  * "Потврди нарачка" button
+
+### 🎯 GOAL: Комплетен checkout flow
+
+---
+
+## ⚫ SPRINT 6 — USER ACCOUNT (Optional)
+
+Кориснички профил и логика за регистрација.
+
+### 👤 PAGES
+* Login page
+* Register page
+* My profile
+* My orders
+* Wishlist (омилени производи)
+* Address book
+* Payment methods
+
+### 🎯 GOAL: User account management
+
+---
+
+## 🟠 SPRINT 7 — ADMIN DASHBOARD (Основа)
+
+Администраторски панел за управување со платформата.
+
+### 📊 DASHBOARD
+* Overview cards (вкупни нарачки, продажба, производи, корисници)
+* Recent orders table
+* Chart (sales trend)
+* Quick stats
+
+### 🧭 NAVIGATION (Sidebar)
+* Контролна табла (Dashboard)
+* Производи (Products)
+* Категории (Categories)
+* Нарачки (Orders)
+* Промоции (Promotions)
+* Корисници (Users)
+* Подесувања (Settings)
+
+### 🎨 ДИЗАЈН
+* SaaS-style layout
+* Sidebar + main content
+* Dark mode ready
+
+### 🎯 GOAL: Admin dashboard structure
+
+---
+
+## 🟢 SPRINT 8 — ADMIN PRODUCTS MANAGEMENT
+
+Управување со производи.
+
+### 📦 PRODUCTS LIST
+* Table: слика | име | цена | залиха | категорија | статус
+* Pagination
+* Search + filters
+* Actions: Edit, Delete, View
+
+### ➕ ADD/EDIT PRODUCT FORM
+* Име (required)
+* Опис (required, rich editor)
+* Цена (required)
+* Попуст (% или фиксна сума)
+* Категорија (dropdown)
+* Бренд
+* Барови за категорија (tags)
+* Upload слики (multiple, drag-drop)
+* Залиха/количество
 * Toggle: "Во промоција"
+* Toggle: "Активен/неактивен"
 
-### 🎯 GOAL
+### 🎯 GOAL: Manage products inventory
 
-Manage products.
+---
 
+## 🔴 SPRINT 9 — ADMIN CATEGORIES + PROMOTIONS
 
-🔥 SPRINT 10 — PROMOTIONS
+Управување со категории и промоции.
 
-Create PROMOTIONS system.
+### 📂 CATEGORIES
+* List of categories with image
+* Add/Edit/Delete category
+* Reorder categories (drag-drop)
 
-Include:
+### 🎁 PROMOTIONS
+* List of active promotions
+* Create promotion:
+  * Назив
+  * Selected products (multi-select)
+  * Discount % or fixed price
+  * Start date + end date
+  * Enable/disable toggle
+* Edit/Delete promotion
 
-* List of products in promotion
+### 🎯 GOAL: Control categories and discounts
 
-Actions:
+---
 
-* Add product to promotion
-* Set discount (price or %)
-* Remove from promotion
+## 🟡 SPRINT 10 — ADMIN ORDERS + SETTINGS
 
-UI:
+Управување со нарачки и подесувања.
 
-* Label "На попуст" automatically shown
+### 📦 ORDERS
+* Orders table: ID | Customer | Total | Date | Status
+* Order details view:
+  * Customer info
+  * Products ordered
+  * Status timeline (Ново → Испратено → Доставено)
+  * Change status
+* Export orders (CSV)
 
-### 🎯 GOAL
+### ⚙️ SETTINGS
+* Store info (назив, лого, email, телефон)
+* Shipping settings (цена, free threshold)
+* Email templates (order confirmation, shipping)
+* Contact page (addresses, phones, hours)
 
-Control discounts and promotions.
-
-🛒 SPRINT 11 — ORDERS + USERS + SETTINGS
-
-Create remaining admin sections.
-
-### ORDERS:
-
-* Table:
-
-  * Име
-  * Телефон
-  * Адреса
-  * Статус (Ново, Испратено, Доставено)
-* Order details view
-
-### USERS:
-
-* List of users
-* Basic info
-
-### SETTINGS:
-
-* Delivery price
-* Free delivery threshold
-* Contact info
-
-### 📦 DUMMY DATA
-
-* Fake products
-* Fake orders
-* Fake users
-
-### 🎯 GOAL
-
-Complete admin panel.
+### 🎯 GOAL: Complete admin functionality
 
