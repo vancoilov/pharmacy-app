@@ -55,36 +55,29 @@ Create a **mobile-first responsive e-commerce pharmacy UI foundation**.
 
 Design system, base layout, and reusable components ready.
 
-🟡 SPRINT 2 — HOMEPAGE
+✅ SPRINT 2 — HOMEPAGE
 
 Create HOMEPAGE using existing components.
 
 Include:
 
-* Top bar (телефон, достава инфо)
-* Search bar
-* Category shortcuts (horizontal scroll)
-* Hero banner / promotions slider
+* ✅ Top bar (телефон, достава инфо)
+* ✅ Search bar
+* ✅ Category shortcuts (grid layout)
+* ✅ Hero banner / promotions slider
 
 Sections:
 
-* "На попуст"
+* ✅ "На попуст"
+* ✅ "Ново"
+* ✅ Product grid (responsive: 2 col mobile, 3 col tablet, 4 col desktop)
+* ✅ Features section (достава, плаќање, поддршка)
+* ✅ Newsletter signup
+* ✅ Footer
 
-* "Ново"
+### 🎯 STATUS: COMPLETE ✅
 
-* "Најпродавано"
-
-* Product grid
-
-* Brands section
-
-* Newsletter signup
-
-* Footer
-
-### 🎯 GOAL
-
-Fully functional homepage UI with realistic layout.
+Fully functional responsive homepage UI ready.
 
 
 🟠 SPRINT 3 — SHOP / CATEGORY PAGE
